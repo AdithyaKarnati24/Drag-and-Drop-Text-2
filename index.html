@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas with SwiperJS</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="controls">
+    <button id="addText">Add Text</button>
+    <select id="fontSelector">
+      <option value="Arial">Arial</option>
+      <option value="Courier New">Courier New</option>
+      <option value="Times New Roman">Times New Roman</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Verdana">Verdana</option>
+      <option value="Tahoma">Tahoma</option>
+      <option value="Trebuchet MS">Trebuchet MS</option>
+      <option value="Comic Sans MS">Comic Sans MS</option>
+    </select>
+    <button id="increaseFontSize">Increase Font Size</button>
+    <button id="decreaseFontSize">Decrease Font Size</button>
+    <button id="undo">Undo</button>
+    <button id="redo">Redo</button>
+  </div>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="canva" id="canva1"></div>
+      </div>
+      <div class="swiper-slide">
+        <div class="canva" id="canva2"></div>
+      </div>
+      <div class="swiper-slide">
+        <div class="canva" id="canva3"></div>
+      </div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

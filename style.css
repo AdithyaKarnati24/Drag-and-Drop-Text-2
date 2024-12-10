@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  background: linear-gradient(to bottom right, #5fb2ff, #7bfea2);
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin: auto;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.canva {
+  width: 360px; /* 9:16 aspect ratio */
+  height: 640px;
+  border: 2px solid #000;
+  position: relative;
+  background: linear-gradient(to bottom right, #ff7e5f, #feb47b);
+  border: 10px solid black;
+
+}
+
+.text-box {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  cursor: grab;
+  border: 1px dashed #ccc;
+  font-family: Arial, sans-serif;
+}
+
+.text-box:focus {
+  outline: 2px solid #ff0004;
+}
+.text-box .edit-controls {
+  display: flex;
+  justify-content: space-between;
+}
